@@ -1,7 +1,5 @@
 #!/bin/sh
 
-set -e
-
 echo "Running Ruby tests..."
 RACK_ENV=test JEKYLL_LOG_LEVEL=warn bundle exec rspec
 
