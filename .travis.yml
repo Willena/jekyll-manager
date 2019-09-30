@@ -1,9 +1,12 @@
 language: ruby
 rvm: 2.2
+
 before_install:
   - nvm install 6
+
 install: script/bootstrap
 script: script/cibuild
+
 cache:
   directories:
     - vendor/bundle
