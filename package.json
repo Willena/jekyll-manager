@@ -36,6 +36,7 @@
   "license": "MIT",
   "dependencies": {
     "brace": "0.9.1",
+    "ckeditor4-react": "^1.0.1",
     "classnames": "2.2.6",
     "highlight.js": "^9.15.10",
     "isomorphic-fetch": "2.2.1",
@@ -116,8 +117,12 @@
       "\\.(css|scss)$": "identity-obj-proxy",
       "^.+\\.(gif|ttf|eot|svg|woff|woff2|ico)$": "<rootDir>/tools/fileMock.js"
     },
-    "roots": ["src"],
-    "testMatch": ["**/*.spec.js"],
+    "roots": [
+      "src"
+    ],
+    "testMatch": [
+      "**/*.spec.js"
+    ],
     "globals": {}
   }
 }
