@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import CKEditor from 'ckeditor4-react';
 
-
 class MarkdownEditor extends Component {
-
   constructor(props) {
     super(props);
   }
@@ -18,19 +16,17 @@ class MarkdownEditor extends Component {
   }
 
   componentDidUpdate() {
-    this.destroy(); this.create();
+    this.destroy();
+    this.create();
   }
 
   componentWillUnmount() {
     this.destroy();
   }
 
-  create() {
-  }
+  create() {}
 
-  destroy() {
-
-  }
+  destroy() {}
 
   render() {
     return (
@@ -47,7 +43,7 @@ class MarkdownEditor extends Component {
 MarkdownEditor.propTypes = {
   initialValue: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  onSave: PropTypes.func.isRequired
+  onSave: PropTypes.func.isRequired,
 };
 
 export default MarkdownEditor;
